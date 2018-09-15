@@ -21,10 +21,12 @@
   <version>1.0</version>
 
   <properties>
+    <vertx.verticle>com.redhat.training.flozano.MainVerticle</vertx.verticle>
+
     <fabric8.mode>openshift</fabric8.mode>
     <fabric8.generator.fromMode>istag</fabric8.generator.fromMode>
     <fabric8.generator.from>redhat-openjdk18-openshift:1.3</fabric8.generator.from>
-    <vertx.verticle>com.redhat.training.flozano.MainVerticle</vertx.verticle>
+    <fabric8.skipResourceValidation>true</fabric8.skipResourceValidation>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.target>1.8</maven.compiler.target>
