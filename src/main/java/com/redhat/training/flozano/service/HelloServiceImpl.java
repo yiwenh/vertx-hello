@@ -8,7 +8,7 @@ public class HelloServiceImpl implements HelloService {
 
 	@Override
 	public void hello(String host, String name, Handler<AsyncResult<String>> resultHandler) {
-		String msg = "Hello test1" + name +  ", from '" + host + "'.\n";
+		String msg = "Hello " + name +  ", from '" + host + "'.\n";
 		resultHandler.handle(Future.succeededFuture(msg));
 	}
 }
